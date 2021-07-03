@@ -22,7 +22,8 @@ var btn = document.querySelector('.btn'),
     six_smart = document.querySelector('.six_smart'),
     six_plus = document.querySelector('.six_plus'),
     six_max = document.querySelector('.six_max'),
-    six_all = document.querySelector('.six_all')
+    six_all = document.querySelector('.six_all'),
+    res = document.querySelector('.res')
 
 btn.onclick = function() {
     all.value = +btn.value + +parents.value + +parents_int.value + +smart.value + +smart_max.value + +smart_plus.value
@@ -45,4 +46,8 @@ btn.onclick = function() {
     six_max.value = +month_max.value * 6
     six_all.value = +six_par.value + +six_par_int.value + +six_smart.value + +six_plus.value + +six_max.value
 
+}
+
+res.onclick = function() {
+    location.reload()
 }
