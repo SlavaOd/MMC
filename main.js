@@ -23,7 +23,8 @@ var btn = document.querySelector('.btn'),
     six_plus = document.querySelector('.six_plus'),
     six_max = document.querySelector('.six_max'),
     six_all = document.querySelector('.six_all'),
-    res = document.querySelector('.res')
+    res = document.querySelector('.res'),
+    reg = document.querySelector('.reg')
 
 btn.onclick = function() {
     all.value = +btn.value + +parents.value + +parents_int.value + +smart.value + +smart_max.value + +smart_plus.value
@@ -39,13 +40,13 @@ btn.onclick = function() {
     month_plus.value = +smart_plus.value * 56.25
     month_max.value = +smart_max.value * 75
     month_all.value = +month_par.value + +month_par_int.value + +month_smart.value + +month_plus.value + +month_max.value
-    six_par.value = +month_par.value * 6
-    six_par_int.value = +month_par_int.value * 6
-    six_smart.value = +month_smart.value * 6
-    six_plus.value = +month_plus.value * 6
-    six_max.value = +month_max.value * 6
+    six_par.value = +month_par.value * 5
+    six_par_int.value = +month_par_int.value * 5
+    six_smart.value = +month_smart.value * 5
+    six_plus.value = +month_plus.value * 5
+    six_max.value = +month_max.value * 5
     six_all.value = +six_par.value + +six_par_int.value + +six_smart.value + +six_plus.value + +six_max.value
-
+    reg.value = six_all.value/30
 }
 
 res.onclick = function() {
