@@ -21,6 +21,26 @@
         width: 85%;
         text-align: center;
     }
+    .about {
+      display: none;
+      position: fixed;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background-color: black;
+      opacity: 0.5;
+      color: #fff;
+    }
+    .about_item {
+      width: 80%;
+      margin: 0 auto;
+    }
+    .close {
+      width: 50px;
+      height: 50px;
+      display: block;
+      margin: 0 auto;
+    }
 </style>
 <body>
     <table class="table">
@@ -93,10 +113,24 @@
           </tbody>
     </table>
     <div class="d-grid gap-2 col-6 mx-auto">
-        <button class="btn btn-primary" type="button">Посчитать</button>
-        <button class="res btn btn-primary" type="button">Сброс</button>
+      <button class="btn btn-primary" type="button">Посчитать</button>
+      <button class="res btn btn-primary" type="button">Сброс</button>
+      <button class="nkp btn btn-primary" type="button">Преимущества НКП</button>
+    </div>
+    <div class="about">
+      <div class="about_item">
+        <ul>
+          <li> Тарифы выгоднее, чем обычные Pre-Paid: больше МБ, минут на другие сети (включая городские номера), действие пакета услуг месяц, а не 28 дней</li>
+          <li>Тарифы удобнее в пользовании: Абонплата снимается ежедневно, равными частями, пропорционально количеству дней в месяце, так же есть возможность пользоваться всеми услугами даже при отрицательном балансе</li>
+          <li>Безопасное подключение: т.к. оформляется на документы клиента, то это делает невозможным мошеннические действия, к примеру восстановление SIM карты и т.д.</li>
+          <li> Легкий старт: в тарифах Smart, Smart+, Smart Max первый месяц стоит всего 100 грн. </li>
+          <li>Возможность подключения до 5 номеров на один документ, а так же, при подключении на один лицевой счет оплачивать услуги может один человек за всех остальных</li>
+          <li>Быстрая связь с оператором: выделенная линия по номеру 477</li>
+          <li>SIM карта при подключении выдается бесплатно</li>
+        </ul>
       </div>
-      
-      <script src="main.js"></script>
+      <button class="close btn btn-primary" type="button">X</button>
+    </div>
+    <script src="main.js"></script>
 </body>
 </html>

@@ -24,7 +24,10 @@ var btn = document.querySelector('.btn'),
     six_max = document.querySelector('.six_max'),
     six_all = document.querySelector('.six_all'),
     res = document.querySelector('.res'),
-    reg = document.querySelector('.reg')
+    reg = document.querySelector('.reg'),
+    clos = document.querySelector('.close'),
+    about = document.querySelector('.about'),
+    nkp = document.querySelector('.nkp')
 
 btn.onclick = function() {
     all.value = +btn.value + +parents.value + +parents_int.value + +smart.value + +smart_max.value + +smart_plus.value
@@ -51,4 +54,11 @@ btn.onclick = function() {
 
 res.onclick = function() {
     location.reload()
+}
+
+clos.onclick = function() {
+    about.style.display = 'none'
+}
+nkp.onclick = function() {
+    about.style.display = 'block'
 }
