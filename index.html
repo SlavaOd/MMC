@@ -41,6 +41,11 @@
       display: block;
       margin: 0 auto;
     }
+    .power {
+      color: red;
+      font-weight: bold;
+      font-size: 30px;
+    }
 </style>
 <body>
     <table class="table">
@@ -67,11 +72,20 @@
             </tr>
             <tr>
               <th scope="row">100</th>
-              <td>Регион/Для родителей +</td>
+              <td>Интернет для родителей</td>
               <td><input class="parents_int" type="number" name="" id=""></td>
               <td ><input class="sell_par_int" type="number" name="" id="" class="sell_all"></td>
               <td><input class="month_par_int" type="number" name="" id=""></td>
               <td><input class="six_par_int" type="number" name="" id=""></td>
+              <!-- <td><input type="number" name="" disabled id=""></td> -->
+            </tr>
+            <tr>
+              <th scope="row">125</th>
+              <td>Ваш Регион</td>
+              <td><input class="region" type="number" name="" id=""></td>
+              <td ><input class="sell_region" type="number" name="" id="" class="sell_all"></td>
+              <td><input class="month_region" type="number" name="" id=""></td>
+              <td><input class="six_region" type="number" name="" id=""></td>
               <!-- <td><input type="number" name="" disabled id=""></td> -->
             </tr>
             <tr>
@@ -141,10 +155,11 @@
           <li> Тарифы выгоднее: больше МБ, минут на другие сети (включая городские номера), действие пакета услуг месяц, а не 28 дней</li>
           <li>Абонплата снимается ежедневно, равными частями,так же есть возможность пользоваться всеми услугами даже при отрицательном балансе</li>
           <li>Безопасное подключение: т.к. оформляется на документы клиента, то это делает невозможным мошеннические действия, к примеру восстановление SIM карты и т.д.</li>
-          <li> Легкий старт: в тарифах Smart, Smart+, Smart Max первый месяц стоит всего 100 грн. </li>
+          <li> Легкий старт: в тарифах Ваш регион, Ваш старт, Ваш выбор первый месяц стоит всего 100 грн. </li>
           <li>Возможность подключения до 5 номеров на один документ</li>
           <li>Быстрая связь с оператором: выделенная линия по номеру 477</li>
           <li>SIM карта при подключении выдается бесплатно</li>
+          <li class="power">ДВЕ СУПЕРСИЛЫ</li>
         </ul>
       </div>
       <button class="close btn btn-primary" type="button">X</button>
